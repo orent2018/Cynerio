@@ -19,7 +19,7 @@
  into a 1 node swarm cluster otherwise external docker secrets are not allowed.
 
 
- A prometheus container was added to monitor the python container on the /prom_metrics end point and the
+ A prometheus container was added to monitor the python container on the /prom-metrics end point and the
 
  redis container as well. In order to monitor the redis container a redis exporter container was added to 
 
