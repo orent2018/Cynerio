@@ -10,9 +10,11 @@
 
  The app uses a username and password to securely connect to the redis database. These were introduced 
  
- externally as environment variables for the sake of this exercise in order to avoid adding them to the
+ externally as environment variables REDIS_USER & REDIS PASSWORD for the sake of this exercise in order
 
- code. In a more production like environment they need to be introduced from an external key store such
+ to avoid adding them to the code.
+
+ In a more production like environment they need to be introduced from an external key store such
  
  as vault or AWS secret manager. Docker secrets can also be used if the docker compose setting is turned
 

@@ -26,8 +26,10 @@ services:
     environment:
       - REDIS_USER=${REDIS_USER}
       - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_ACLFILE=/etc/aclconf
     volumes:
       - redis-data:/data
+      - ./aclconf:/etc/aclconf
     ports:
       - 6379:6379
     healthcheck:
@@ -42,6 +44,8 @@ services:
       - 9121:9121
     environment:
       - REDIS_ADDR=redis:6379
+      - REDIS_USER=${REDIS_USER}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
     depends_on:
       - redis
 

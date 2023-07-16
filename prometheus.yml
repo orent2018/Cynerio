@@ -8,4 +8,4 @@ scrape_configs:
       - targets: ['python_app:5000']
   - job_name: 'redis'
     static_configs:
-      - targets: ['redis:6379']
+      - targets: ['redis_exporter:9121']

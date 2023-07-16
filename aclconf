@@ -1,0 +1,1 @@
+user ${REDIS_USER} on +get +set >password ${REDIS_PASSWORD}
